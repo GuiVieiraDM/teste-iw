@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projeto Vanilla JS</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer ></script>
+</head>
+<body>
+  <header>
+    <img src="../assets/logo.svg" alt=""> 
+  <nav>
+    <ul>
+      <li><a href="#">Nossa história</a></li>
+      <li><a href="#">Área do cliente</a></li>
+      <li><a href="#">Indicar imóvel</a></li>
+      <li><a href="#">Aluguel</a></li>
+    </ul>
+    <a href="#"><img class="image-nav-option" src="../assets/logo.svg" alt="Logo"></a>
+  </nav>
+  <span class="material-icons menu-icon">menu</span>
+  </header>
+  <div class="hero">
+    <div class="form-wrapper">
+      <div class="options">
+        <button href="#" class="option active"><span class="material-symbols-outlined">check</span>Comprar</button>
+        <button href="#" class="option"><span class="material-symbols-outlined">check</span>Alugar</button>
+        <button href="#" class="option"><span class="material-symbols-outlined">check</span>Temporada</button>
+      </div>
+      <form>
+        <label for="tipo-imovel">Tipos de Imóveis</label>
+        <div class="select-wrapper">
+          <select id="tipo-imovel" name="tipo-imovel">
+            <option value="" disabled selected>Selecione</option>
+            <option value="apartamento">Apartamento</option>
+          </select>
+          <span class="material-symbols-outlined select-icon">expand_all</span>
+        </div>
+
+        <label for="localizacao">Localização</label>
+        <div class="select-wrapper">
+          <select id="localizacao" name="localizacao">
+            <option value="" disabled selected>Selecione</option>
+            <option value="bairro-centro">Centro</option>
+          </select>
+          <span class="material-symbols-outlined select-icon">expand_all</span>
+        </div>
+
+        <label for="caracteristicas">Características importantes</label>
+        <div class="select-wrapper">
+          <select id="caracteristicas" name="caracteristicas">
+            <option value="" disabled selected>Selecione</option>
+            <option value="vaga-garagem">Vaga de garagem</option>
+          </select>
+          <span class="material-symbols-outlined select-icon">expand_all</span>
+        </div>
+         <label for="preco_min">Faixa de preço</label>
+        <div class="input-wrapper">
+          <input type="text" name="preco_min" placeholder="R$ de...">
+          <input type="text" name="preco_max" placeholder="R$ até...">
+        </div>
+        <button
+          type="submit"
+          class="submit-button"
+        >
+          Buscar
+           <span class="material-symbols-outlined button-icon">arrow_forward</span>
+        </button>
+      </form>
+    </div>
+    <div class="image-container">
+      <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c" alt="Fachada de imóvel">
+      <span class="material-icons play-icon">play_arrow</span>
+    </div>
+  </div>  
+</body>
+</html>
